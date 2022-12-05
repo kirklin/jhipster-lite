@@ -80,7 +80,7 @@ public class EHCacheModulesFactory {
       .javaDependencies()
         .addDependency(groupId("org.springframework.boot"), artifactId("spring-boot-starter-cache"))
         .addDependency(groupId("javax.cache"), artifactId("cache-api"))
-        .addDependency(groupId(EHCACHE_GROUP), artifactId("ehcache"))
+        .addDependency(groupId(EHCACHE_GROUP), artifactId("ehcache"), versionSlug("ehcache"))
         .and()
       .springMainLogger(EHCACHE_GROUP, LogLevel.WARN)
       .springTestLogger(EHCACHE_GROUP, LogLevel.WARN);

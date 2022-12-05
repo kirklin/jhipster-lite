@@ -102,6 +102,6 @@ public class CustomJHLiteModuleFactory {
   }
 
   private PropertyValue exceptionPackages(JHipsterModuleProperties properties) {
-    return propertyValue("org.", "java.", "net.", "javax.", "com.", "io.", "de.", "tech.jhipster.lite", properties.basePackage().get());
+    return propertyValue("org.", "java.", "net.", "jakarta.", "com.", "io.", "de.", "tech.jhipster.lite", properties.basePackage().get());
   }
 }

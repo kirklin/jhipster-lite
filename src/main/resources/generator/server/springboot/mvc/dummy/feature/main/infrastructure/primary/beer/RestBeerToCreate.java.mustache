@@ -5,8 +5,8 @@ import {{packageName}}.dummy.domain.Amount;
 import {{packageName}}.dummy.domain.beer.BeerName;
 import {{packageName}}.dummy.domain.beer.BeerToCreate;
 import io.swagger.v3.oas.annotations.media.Schema;
+import jakarta.validation.constraints.NotNull;
 import java.math.BigDecimal;
-import javax.validation.constraints.NotNull;
 
 @Schema(name = "beerToCreate", description = "A beer to create")
 class RestBeerToCreate {

@@ -15,8 +15,7 @@
   <properties>
     <jjwt.version>0.11.5</jjwt.version>
     <logstash-logback-encoder.version>7.2</logstash-logback-encoder.version>
-    <problem-spring.version>0.27.0</problem-spring.version>
-    <spring-boot.version>2.7.5</spring-boot.version>
+    <spring-boot.version>3.0.0</spring-boot.version>
     <spring-cloud.version>2021.0.0</spring-cloud.version>
     <spring-cloud-netflix-eureka-client.version>3.1.4</spring-cloud-netflix-eureka-client.version>
     <springdoc-openapi.version>1.6.12</springdoc-openapi.version>
@@ -44,6 +43,7 @@
     <json-web-token.version>0.11.5</json-web-token.version>
     <jhlite.version>0.21.0</jhlite.version>
     <commons-lang3.version>3.12.0</commons-lang3.version>
+    <ehcache.version>3.10.0</ehcache.version>
   </properties>
 
   <dependencyManagement>
@@ -82,11 +82,6 @@
         <groupId>org.testcontainers</groupId>
         <artifactId>testcontainers-bom</artifactId>
         <version>${testcontainers.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.zalando</groupId>
-        <artifactId>problem-spring-web</artifactId>
-        <version>${problem-spring.version}</version>
       </dependency>
       <dependency>
         <groupId>net.nicoulaj.maven.plugins</groupId>
@@ -221,6 +216,11 @@
         <groupId>org.apache.commons</groupId>
         <artifactId>commons-lang3</artifactId>
         <version>${commons-lang3.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.ehcache</groupId>
+        <artifactId>ehcache</artifactId>
+        <version>${ehcache.version}</version>
       </dependency>
     </dependencies>
   </dependencyManagement>

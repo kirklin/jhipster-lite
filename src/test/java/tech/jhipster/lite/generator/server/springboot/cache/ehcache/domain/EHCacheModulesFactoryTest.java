@@ -89,6 +89,7 @@ class EHCacheModulesFactoryTest {
             <dependency>
               <groupId>org.ehcache</groupId>
               <artifactId>ehcache</artifactId>
+              <version>${ehcache.version}</version>
             </dependency>
         """
       )
